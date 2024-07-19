@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login -  </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1> Register Form</h1>
+    </header>
+    <br>
+    <div class="forms">
+        <form  name="validateform"  method="post" onsubmit="return validationform()">
+            firstname:<input type="text" name="firstname"><br><br>
+            lastname:<input type="text" name="lastname"><br><br>
+            city:<input type="text" name="city"><br><br>
+            phone_no:<input type="number" name="phone_no"><br><br>
+            address:<textarea type="text" name="address"></textarea><br>
+            <button type="submit" value="submit">Submit</button>
+            </form>
+    </div>
+    <script>
+        function validationform(){
+            var firstname=document.validateform.firstname.value;
+            var lastname=document.validateform.lastname.value;
+            var city=document.validateform.city.value;
+            var phone_no=document.validateform.phone_no.value;
+            var address=document.validateform.address.value;
+            
+            if(firstname == null || firstname ==""){
+                alert("firstname should not be blank");
+                return false;
+            }
+            else if(lastname == null || lastname ==""){
+                alert("lastname should not be blank");
+                return false;
+            }
+            else if(city == null || city ==""){
+                alert("city should not be blank");
+                return false;
+            }
+            else if(phone_no.length<10 || phone_no.length>11 ){
+                alert("number length must be atleast 10 numbers long");
+                return false;
+            }
+            else if(address == null || address ==""){
+                alert("address should not be blank");
+                return false;
+            }
+            else{
+                alert("Registered Succesfully");
+                return true;
+            }
+
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2025 Register . All rights reserved.</p>
+    </footer>
+</body>
+</html>

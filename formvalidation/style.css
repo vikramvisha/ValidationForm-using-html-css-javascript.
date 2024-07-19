@@ -1,0 +1,58 @@
+.forms {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #481717;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.forms form {
+    display: flex;
+    flex-direction: column;
+}
+.forms label {
+    margin-bottom: 5px;
+}
+.forms input, .forms textarea, .forms button {
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #030101;
+    border-radius: 5px;
+}
+.forms input:focus{
+    background-color: aqua;
+}
+.forms textarea:focus{
+    background-color: aquamarine;
+}
+.forms button {
+    background-color: #cc7532;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+.forms button:hover {
+    background-color: #45a049;
+        }
+header h1 {
+    margin: 0;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+body{
+    background-image: url(asset/baclkground.jpeg);
+}
